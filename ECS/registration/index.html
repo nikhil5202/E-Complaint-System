@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Colorlib Templates">
+  <meta name="author" content="Colorlib">
+  <meta name="keywords" content="Colorlib Templates">
+
+  <!-- Title Page-->
+  <title>E-Complaint System</title>
+
+  <!-- Icons font CSS-->
+  <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+  <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <!-- Font special for pages-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS-->
+  <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+  <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main CSS-->
+  <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg border navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/ecs/home.html">E-Complaint System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/ecs/home.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ecs/login.html">Admin Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/ecs/registration/index.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ecs/login_user/user_login.html">User Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header class=" border py-lg-5 mb-lg-5" style="background-color: #99ff99 ;">
+    <div class="" style="background-color: #99ff99;">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <center>
+            <h1 class="display-4 text-success font-italic font-weight-normal mt-5 mb-2"><br>E-Complaint System</h1>
+            <h3><b>Developed By: NIKHIL SRIVASTAVA </b></h3>
+      <p>Email ID: srivasnikhil7570@gmail.com</p>
+            <h3 class="lead mb-5 text-dark">Please register yourself first</h3>
+          </center>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins" style="background-image: url(images/bg-01.jpg);">
+    <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+        <div class="card-body">
+
+          <h2 class="title">Sign Up Form</h2>
+
+          <form method="POST" action="registration.php">
+            <div class="row row-space">
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">First name</label>
+                  <input class="input--style-4" type="text" name="first_name">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Last name</label>
+                  <input class="input--style-4" type="text" name="last_name">
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Date of Birth</label>
+                  <div class="input-group-icon">
+                    <input class="input--style-4 js-datepicker" type="text" name="dob">
+                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Gender</label>
+                  <div class="p-t-10">
+                    <label class="radio-container m-r-45">Male
+                      <input type="radio" name="gender" value="Male">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">Female
+                      <input type="radio" name="gender" value="Female">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Email </label>
+                  <input class="input--style-4" type="email" name="email">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Phone Number</label>
+                  <input class="input--style-4" type="text" name="phone" pattern="[0-9]+" maxlength="10" minlength="10"
+                    required>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <label class="label">Password</label>
+                  <input class="input--style-4" type="password" name="pass"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="label">City</label>
+              <div class="rs-select2 js-select-simple select--no-search">
+                <select name="city">
+                  <option disabled="disabled" selected="selected">Choose option</option>
+                  <option value="Aligarh">Aligarh</option>
+                  <option value="Bhopal">Bhopal</option>
+                  <option value="Janshi">Jhansi</option>
+                  <option value="Jabalpur">Jabalpur</option>
+                  <option value="Kanpur">Kanpur</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Allahbad">Prayagraj</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <div class="select-dropdown"></div>
+              </div>
+            </div>
+            <div class="p-t-15">
+              <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-success">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; E-Complaint 2022 by Nikhil Srivastava</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Jquery JS-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Vendor JS-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script src="vendor/datepicker/moment.min.js"></script>
+  <script src="vendor/datepicker/daterangepicker.js"></script>
+
+  <!-- Main JS-->
+  <script src="js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

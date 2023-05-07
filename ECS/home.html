@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>E-Complaint System</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #034108;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0s;
+  animation-name: animatebottom;
+  animation-duration: 0s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg border navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">E-Complaint System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/ecs/home.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ecs/login.html">Admin Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/ecs/registration/index.html">Sign up</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/ecs/login_user/user_login.html">User Login</a>
+          </li>
+		  </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <!-- Header -->
+  <header class=" border py-5 mb-lg-5" style="background-color: #99ff99 ;" >
+    <div class="" style="background-color: #99ff99;">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-success font-italic font-weight-normal mt-5 mb-2">E-Complaint System</h1>
+          <h3 class="lead mb-5 text-dark">The New Evolution </h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <h2>About</h2>
+        <hr>
+        <p>E-Complaint System gives you the freedom from standing in line and any kind of mediatorship. You are your own incharge here. Also you get every department just here. So, register yourself once and post your complaint against any department provided.
+        <h3><b>Developed By: NIKHIL SRIVASTAVA </b></h3>
+        <p>Email ID: srivasnikhil7570@gmail.com</p>
+        <a class="btn btn-outline-success btn-lg" href="/ecs/registration/index.html">Proceed &raquo;</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        
+      </div>
+    </div>
+
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="/ecs/images/modi2.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Narendra Modi</h4>
+            <p class="card-text">Narendra Damodardas Modi is an Indian politician serving as the 14th and current Prime Minister of India since 2014. He was the Chief Minister of Gujarat from 2001 to 2014, and is the Member of Parliament for Varanasi. He will be contesting from the same seat in 2019 loksabha elections.</p>
+          </div>
+          <div class="card-footer bg-success">
+            <a href="https://www.narendramodi.in/" class="btn btn-outline-light">Know More!</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="/ecs/images/kovind2.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Ram Nath Kovind</h4>
+            <p class="card-text">Ram Nath Kovind is an Indian politician currently serving as the 14th President of India, in office since 25 July 2017. Previously he had served as the Governor of Bihar from 2015 to 2017 and was a Member of Parliament, Rajya Sabha from 1994 to 2006.</p>
+          </div>
+          <div class="card-footer bg-success">
+            <a href="https://presidentofindia.nic.in/" class="btn btn-outline-light">Know More!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+//loader
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 0000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div>
+  <!-- Footer -->
+  <footer class="py-lg-4 bg-success">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; E-Complaint 2022 by Nikhil Srivastava</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+
+</body>
+
+</html>
